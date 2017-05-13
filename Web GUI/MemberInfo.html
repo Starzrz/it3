@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>股市量化交易系统</title>
+    <meta name="description"
+          content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="generator" content="Codeply">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="stylesheet" href="./css/ionicons.min.css"/>
+    <link rel="stylesheet" href="./dist/css/homepage.css"/>
+    <link rel="stylesheet" href="./dist/css/memberinfo.css"/>
+</head>
+<body>
+<div class="container-fluid">
+            <nav id="topNav" class="navbar navbar-default navbar-fixed-top" style="background-color: #23527c">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>
+                            QUANT</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="bs-navbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="page-scroll" href="#">功能点1</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">功能点2</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">功能点3</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">功能点4</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <img src="dist/img/test3.jpg" class="image-circle" alt="User Image" style="max-width: 20px;max-height: 20px">
+                            <span class="hidden-xs">Alexander Pierce</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <!-- Menu Body -->
+                            <li>
+                            <a  href="#">个人中心</a>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li >
+                            <a  href="#">登出</a>
+                            </li>
+                            </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+        <div class="row-fluid" >
+
+            <div class="span2">
+                <ul class="nav nav-list" style="text-align:center;background-color: ghostwhite">
+                    <li style="font-size:45px">aaa</li>
+                    <li >
+                        <img src="dist/img/test3.JPG" class="img-circle" alt="User Image">
+                    </li>
+                    <li class="nav-header"  >
+
+                </li>
+                    <li class="active" >
+                        <a href="#">个人资料</a>
+                    </li>
+                    <li>
+                        <a href="#">个人策略</a>
+                    </li>
+                    <li>
+                        <a href="#">关注的策略</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#">帮助</a>
+                    </li>
+                    <br><br><br><br>  <br><br><br><br>                    <br><br><br><br>  <br><br><br><br>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+            <div class="span9">
+                <form name ="form" class="form-horizontal" role="form">
+                    <li style="font-size:45px">aaa</li>
+                    <br>
+                    <br>
+                    <div class="form-group" style="font-size: 20px">
+                        <label  class="span2 control-label">用户名:</label>
+                        <label for="firstname" class="span2 control-label">张驰</label>
+                    </div>
+                    <div class="form-group" style="font-size: 20px">
+                        <label  class="span2 control-label">密码:</label>
+                        <label for="lastname" class="span2 control-label">xxxxx</label>
+                        <button type="button" class="btn btn-warning" id="cagpwd">
+                           修改密码
+                        </button>
+                     <!--修改密码的弹窗-->
+                        <div class="modal" id="mymodal1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title">修改密码</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            <input id="newword" type="text" data-provide="typeahead" class="form-control" placeholder="新密码">
+
+                                        </p>
+                                        <p>
+                                            <input id="newword1" type="text" class="form-control" placeholder="确认密码">
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <p name="demo">aaa</p>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <button type="button" id="checkpassword" class="btn btn-warning" >保存</button>
+
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    </div>
+                    <div class="form-group1" style="font-size: 20px">
+                        <label  class="span2 control-label">个人简介:</label>
+                        <textarea type="text" class="span6 control-label" style="min-height:100px" placeholder="请填写一段你的个人简介，如投资风格，思路等，不超过200字，简介将公开显示在你的果仁个人主页上。">
+                        </textarea>
+
+                    </div>
+                    <div class="form-group">
+
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script  type="text/javascript">
+    $(document).ready(function () {
+        $("#cagpwd").click(function () {
+            $("#mymodal1").modal("toggle");
+        });
+        $("#checkpassword").click(function () {
+           var x= $("#newword").val();
+           var y=$("#newword1").val();
+           if(x===y){
+               alert("修改成功");
+           }
+           else{
+               alert("两次密码不一致");
+           }
+
+        });
+    });
+
+
+</script>
+
+
+</body>
+
+
+</html>

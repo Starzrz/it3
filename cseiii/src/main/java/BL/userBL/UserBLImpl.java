@@ -16,7 +16,7 @@ public class UserBLImpl implements UserBL{
 	@Override
 	public LoginResult getLoginResult(String id, String password) {
 		// TODO Auto-generated method stub
-		return dao.getLoginResult(id, password)
+		return dao.getLoginResult(id, password);
 	}
 
 	@Override

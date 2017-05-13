@@ -3,9 +3,16 @@ package server.dao;
 import java.util.ArrayList;
 
 import server.others.UpdateResult;
-import server.po.StrategyPo;
+
+import vopo.StrategyPo;
+
 
 public interface StrategyDao {
+	/**
+	 * @param sharesId 股票代码的列表,开始日期，结束日期
+	 * @return 对应时期的股票信息
+	 */
+	public StrategyPo getSharesDate(ArrayList<String> sharesId,String beginDate,String endDate);
 
 	public StrategyPo getStrategyPo(String strategyID);
 	

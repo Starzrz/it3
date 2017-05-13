@@ -4,7 +4,8 @@ import server.dao.UserDao;
 import server.others.LoginResult;
 import server.others.RegisterResult;
 import server.others.UpdateResult;
-import server.po.UserPo;
+import vopo.UserPo;
+
 
 public class UserDaoImpl implements UserDao {
 	/*

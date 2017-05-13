@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 import server.dao.StrategyDao;
 import server.others.UpdateResult;
-import server.po.StrategyPo;
+import vopo.StrategyPo;
+
 
 public class StrategyDaoImpl implements StrategyDao {
 	/*
@@ -59,6 +60,11 @@ public class StrategyDaoImpl implements StrategyDao {
 	 * 添加策略
 	 */
 	public Boolean addStrategy (StrategyPo po){
+		return null;
+	}
+	@Override
+	public StrategyPo getSharesDate(ArrayList<String> sharesId, String beginDate, String endDate) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 }

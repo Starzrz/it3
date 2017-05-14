@@ -30,7 +30,9 @@ jQuery(document).ready(function() {
     	});
 
     });
-
+    $("#signin").click(function () {
+        alert(1);
+    })
 
 
 });

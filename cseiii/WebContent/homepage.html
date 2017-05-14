@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quentn | Quantitative analysis of stock  &amp; Data Processing</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/homepage.css"/>
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- docs specific-->
+</head>
+<body>
+
+<nav class="nav-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="navbar-header">
+                    <a href="/" class="home-link"><img src="/img/header-icon.png" class="logo"></a>
+                </div>
+
+                <ul class="menu">
+
+
+                    <li class="has-dropdown">
+                        <a href="#">Stock Marketer</a>
+                        <ul class="subnav">
+                            <li>
+                                <a href="#">股票行情</a>
+                            </li>
+                            <li>
+                                <a href="#">市场温度计</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="/pricing">Strategy Center</a>
+                    </li>
+
+                    <li>
+                        <a href="/pricing">Develop A Strategy</a>
+                    </li>
+
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="text-right">
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" target="_blank">Sign Up</a>
+                        </li>
+                        <li>
+                            <a data-toggle="modal"  id="login" >Login</a>
+                            <div class="modal" id="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">登陆</h4>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="text" class="form-control" id="username" placeholder="用户名">
+                                            <input type="password" class="form-control" id="password" placeholder="密码">
+
+                                        </div>
+                                        <div class="modal-footer" >
+                                            <button  style="text-align: center" type="button" id="checkpassword" class="btn btn-warning" >登陆</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<header id="first">
+    <div class="header-content">
+        <div class="inner">
+            <h1 class="cursive">量化交易系统</h1>
+            <br>
+            <br>
+            <h4>灵活定制 - 极简操作 - 分析数据化 - 工具免费化</h4>
+            <button data-toggle="modal"  id="login1" >Login</button>
+            <div class="modal" id="modal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">登陆</h4>
+
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="form-control" id="username" placeholder="用户名">
+                            <input type="password" class="form-control" id="password" placeholder="密码">
+
+                        </div>
+                        <div class="modal-footer" >
+                            <button  style="text-align: center" type="button" id="checkpassword" class="btn btn-warning" >登陆</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+        </div>
+    </div>
+</header>
+
+<div id="home-body">
+    <div id="intro-cnt">
+        <div class="intro created">
+            <div class="img">
+                <img src="./src/img/market.png">
+            </div>
+            <p class="title">股票市场</p>
+            <p class="txt num1">展示丰富</p>
+            <p class="txt num2">轻松了解股市行情</p>
+        </div>
+        <div class="ver-gap"></div>
+        <div class="intro share">
+            <div class="img"><img src="./src/img/centrality.png"></div>
+            <p class="title">策略中心</p>
+            <p class="txt num1">海量策略</p>
+            <p class="txt num2">免费跟随交易，交流学习</p>
+        </div>
+        <div class="ver-gap"></div>
+        <div class="intro mall">
+            <div class="img"><img src="./src/img/make.png"></div>
+            <p class="title">制定策略</p>
+            <p class="txt num1">无需编程</p>
+            <p class="txt num2">轻松定制量化策略</p>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <span class="pull-right text-muted small"><a href="#">狂扁小朋友</a> ©2017 Group</span>
+        </div>
+    </div>
+</footer>
+<script  type="text/javascript">
+    $(document).ready(function () {
+        $("#login").click(function () {
+            $("#modal").modal("toggle");
+        });
+        $("#login1").click(function () {
+            $("#modal1").modal("toggle");
+        });
+    });
+</script>
+</body>
+</html>

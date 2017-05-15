@@ -6,11 +6,16 @@
         <version>1.6.1</version>
     </dependency>
     <dependency>
+    	<groupId>org.json</groupId>
+    	<artifactId>json</artifactId>
+    	<version>20160810</version>
+	</dependency>
+    <dependency>
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
         <version>3.20.0-GA</version>
     </dependency>
-    <!--SpringÊ¹ÓÃ×¢½âÅäÖÃAOP-->
+    <!--SpringÊ¹ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AOP-->
     <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
@@ -21,7 +26,7 @@
         <artifactId>aspectjweaver</artifactId>
         <version>1.8.9</version>
     </dependency>
-    <!--SpringÓÐ¹ØÒÀÀµ-->
+    <!--Springï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½-->
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
@@ -72,7 +77,7 @@
         <artifactId>spring-tx</artifactId>
         <version>4.3.3.RELEASE</version>
     </dependency>
-    <!--ÈÕÖ¾-->
+    <!--ï¿½ï¿½Ö¾-->
     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
@@ -108,7 +113,7 @@
         <artifactId>junit</artifactId>
         <version>4.12</version>
     </dependency>
-    <!--WebÏà¹ØÒÀÀµ-->
+    <!--Webï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-->
     <dependency>
         <groupId>javax</groupId>
         <artifactId>javaee-api</artifactId>
